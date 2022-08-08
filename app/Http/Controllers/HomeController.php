@@ -30,7 +30,6 @@ class HomeController extends Controller
     public function index(){
         $setting = Setting::first();
         $slider = Content::select('id','title','description','image','slug')->limit(6)->get();
-        // dd($slider);
         $announcement = Content::where('type','=','Announcement')->where('status','=','True')->get();
         $news = Content::where('type','=','News')->where('status','=','True')->get();
 
@@ -41,6 +40,20 @@ class HomeController extends Controller
             'news'=>$news
         ];
         return view('home.index', $data);
+    }
+    public function blog(){
+        $setting = Setting::first();
+        $slider = Content::select('id','title','description','image','slug')->limit(6)->get();
+        $announcement = Content::where('type','=','Announcement')->where('status','=','True')->get();
+        $news = Content::where('type','=','News')->where('status','=','True')->get();
+
+        $data = [
+            'setting'=>$setting,
+            'slider'=>$slider,
+            'announcement'=>$announcement,
+            'news'=>$news
+        ];
+        return view('home.blog', $data);
     }
 
     public function content($id, $slug){
