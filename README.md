@@ -1,6 +1,6 @@
 Business Website Project
 ---------------------
-2020 / BLM441 Special Topics I in Computer Engineering Course Project
+2022 / Triton Tech Web App
 
 A company business website project, has an admin panel connected to the database to control all the content, comments, messages, users and settings.
 
