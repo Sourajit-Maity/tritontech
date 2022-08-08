@@ -16,7 +16,6 @@
                     </a>
                 </div>
             </div>
-
             @foreach($slider->skip(1) as $rs)
                 <div class="carousel-item" style="background-image: url({{ Storage::url($rs->image) }})">
                     <div class="carousel-caption d-none d-md-block" style="margin-bottom: 100px;">

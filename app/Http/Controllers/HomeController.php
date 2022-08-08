@@ -29,7 +29,8 @@ class HomeController extends Controller
 
     public function index(){
         $setting = Setting::first();
-        $slider = Content::select('id','title','description','image','slug')->limit(3)->get();
+        $slider = Content::select('id','title','description','image','slug')->limit(6)->get();
+        // dd($slider);
         $announcement = Content::where('type','=','Announcement')->where('status','=','True')->get();
         $news = Content::where('type','=','News')->where('status','=','True')->get();
 
