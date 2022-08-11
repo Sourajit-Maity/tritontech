@@ -86,6 +86,6 @@
         </div>
     </div>
     <div class="container">
-        <p class="copyright text-center">All Rights Reserved. &copy; 2020 {{ $setting->company }}</p>
+        <p class="copyright text-center">All Rights Reserved. &copy; 2022 {{ $setting->company }}</p>
     </div>
 </footer>

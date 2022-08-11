@@ -73,7 +73,7 @@
                             <a class="nav-link" href="" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i style="margin-left: 10px;" class="fas fa-user"></i><b> Login / Join </b><i class="fas fa-sort-down"></i></a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
                                 <a class="dropdown-item" href="{{ route('login') }}"><i style="margin-right: 20px;" class="fas fa-user-lock"></i><b>Login</b></a>
-                                <a class="dropdown-item" href="{{ route('register') }}"><i style="margin-right: 20px;" class="fas fa-user-plus"></i><b>Register</b></a>
+                                <!-- <a class="dropdown-item" href="{{ route('register') }}"><i style="margin-right: 20px;" class="fas fa-user-plus"></i><b>Register</b></a> -->
                             </div>
                         </li>
                     @endguest
